@@ -6,9 +6,8 @@ import App from "./App";
 import authorizationUtils from "./utils/authorizationUtils";
 
 /** Import containers here */
+import CategoriesDashboard from "./containers/category/CategoriesDashboard";
 import ErrorComponent from "./containers/errors/ErrorComponent";
-import PublicComponent from "./containers/guests/PublicComponent";
-import PrivateComponent from "./containers/users/PrivateComponent";
 
 const routes = state => {
   /* https://tylermcginnis.com/react-router-protected-routes-authentication/ */
@@ -30,14 +29,8 @@ const routes = state => {
         {/* PrivateRoutes */}
         <PrivateRoute
           exact
-          path="path"
-          component={PrivateComponent}
-        />
-        {/* PublicRoutes */}
-        <Route
-          exact
-          path="path"
-          component={PublicComponent}
+          path="/categories"
+          component={CategoriesDashboard}
         />
         {/* Error Handling Routes */}
         <Route

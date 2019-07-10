@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
-// API Status Reducer
-import apiStatus from "./apiStatusReducer";
+/** Categories Reducer */
+import categories from "./categoriesReducer";
 
 const rootReducer = combineReducers({
-  apiStatus
+  categories
 });
 
 export default rootReducer;

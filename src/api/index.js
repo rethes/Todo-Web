@@ -1,2 +1,1 @@
-/** Import all the APIs */
-export { default as statusApi } from "./status.js";
+export { default as categoryApi } from "./category";

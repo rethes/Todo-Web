@@ -1,9 +1,9 @@
-import URL from "./utils";
-import configureStore from "../../redux/store/configureStore";
+import URL from "./utils.js";
+// import configureStore from "../../redux/store/configureStore";
 
 /** Retrieve authentication from saved state */
 
-const authentication = configureStore().getState().authentication;
+// const authentication = configureStore().getState().authentication;
 const headers = new Headers(
   {
     // "Authorization": authentication.access_token,
@@ -14,11 +14,14 @@ const headers = new Headers(
   });
 
 export async function get(url) {
+  console.log(URL(url));
+  debugger;
   const response = await fetch(URL(url), {
     method: "GET",
     headers: headers
   });
   const data = await response.json();
+  debugger;
   return {
     data: data,
     status: response.status

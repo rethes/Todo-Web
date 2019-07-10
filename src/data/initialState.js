@@ -1,6 +1,5 @@
 export const initialState = {
-  /** Api Status */
-  status: {
-    message: ""
-  }
+  /** Categories */
+  categories: [1,2],
+  // errorMessage: ""
 };
