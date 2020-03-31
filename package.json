@@ -9,7 +9,7 @@
     "prettier": "^1.16.4",
     "jsdom": "^13.0.0",
     "json-loader": "^0.5.7",
-    "open": "^0.0.5",
+    "open": "^6.0.0",
     "style-loader": "^0.23.0",
     "url-loader": "^1.1.2"
   },
